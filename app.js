@@ -1,2 +1,3 @@
-console.log("Hi there");
-console.log("Just a test");
+const hobbies = ['cooking', 'dancing', 'fishing', 'driving'];
+hobbies.push('programming');
+console.log(hobbies);
