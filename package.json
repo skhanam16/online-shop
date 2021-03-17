@@ -1,0 +1,22 @@
+{
+  "name": "online-shop",
+  "version": "1.0.0",
+  "description": "Landing page for online shopping",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skhanam16/online-shop.git"
+  },
+  "author": "Shaleha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skhanam16/online-shop/issues"
+  },
+  "homepage": "https://github.com/skhanam16/online-shop#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
