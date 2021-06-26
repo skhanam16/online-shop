@@ -1,0 +1,31 @@
+--header1: calc(2rem +1vw) - this means 2rem is our base that is 20px and it will increase for every 1000px of width
+it gonna grow 10px
+
+this 2rem will grow +1vw
+this base 2rem  for every  1000px width will grow by 10px
+maximum size of scaling up or stop scaling up
+clamp() is a css function. 
+Clamp except three  parameters. minimum size, maximum size and idel size the size you would like
+First parameter is minimum size, when you use absolute value for that.
+Second parameter is say 5vw. this middle one says if font size is above frist parameter than
+revert it to second parameter
+
+***Calculate the vw value by taking the difference in font size (22- 18), divide it by the difference in viewport
+widths (1000 - 600), then multiply it by 100vw - smaller-viewport-width (100vw - 600px);
+
+
+
+
+font-size:  5vw; what does mean ->vw from left to right or right to left your device screen 
+vh, vw this viewport units is that they are automatically recalculated whenever the viewport changes
+100vw or 100vh is always full screen
+% of width and height are always based on parent element
+100% width or height of its parent width or height
+
+calc(2rem +1vw)  WE can set a minimum font-size, then scale the font with a small viewport multiple by using the calc()
+property
+*** zellwk.com/blog/viewport-based-typography/
+spelling out
+
+
+
