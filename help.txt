@@ -27,5 +27,14 @@ property
 *** zellwk.com/blog/viewport-based-typography/
 spelling out
 
+position absolute makes any object fix
+
+
+SITE BUILDIHG WORKS
+1. Do the navigation
+
+
+
+
 
 
