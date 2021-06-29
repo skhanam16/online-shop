@@ -46,8 +46,11 @@ body{
     font-family: 'Ruh1', sans-serif;
 }
 
-h1 {
+#logo{
     font-family: 'vibes', sans-serif;
+    font-size: var(--header1);
+}
+h1{
     font-size: var(--header1);
 }
 
@@ -67,6 +70,7 @@ li,
 button,
 label,
 input,
+a,
 p {
     font-size: var(--text);
     // it will stop shrinking at 50% vw
@@ -84,5 +88,143 @@ ul {
 }
 
 a {
+    color: black;
     text-decoration: none;
+}
+
+// Nav Section
+
+.main-header{
+   
+//    border-bottom: 1px solid rgb(37, 34, 34);
+   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+ 
+ 
+}
+
+nav{
+    width: 90%;
+    margin: auto;
+    min-height: 10vh;
+    // background: #a1dbc8;
+    display: flex;
+    align-items: center; 
+    padding: 2rem 1rem;
+}
+
+#logo{
+    flex: 1 1 2rem;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 2rem;
+}
+
+.hero{
+    min-height: 90vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    // background: rgb(153, 180, 126);
+    position: relative;
+}
+
+.hero-intro,
+.hero-images{
+   width: 50%;
+   flex: 1 1 40rem;
+}
+
+.hero-intro{ 
+    text-align: center;
+}
+.hero-intro a{ 
+    border: 1px solid black;
+    padding: 2rem 8rem;
+}
+
+.hero-intro p{
+    padding: 5rem 10rem;
+    color: var(--gray-text);
+}
+
+.hero-intro h2{
+    padding-top: 3rem;
+}
+
+
+.hero-elena{
+    width: 100%;
+    height: 100%;
+    
+}
+
+// .plant{
+//     position: absolute;
+//     bottom: 0;
+//     left: -10%;
+// }
+
+@media screen and(max-width: 842px){
+    .burger span{
+        padding: 0.2rem 2rem;
+        background: var(--gray-text);
+        margin: 0.5rem 0rem;
+        display: block;
+    }
+
+    .hero-intro a{ 
+        border: 1px solid black;
+        padding: 2rem 8rem;
+        margin-bottom: 2rem;
+        
+    }
+    .hero-intro p{
+        padding: 2rem 10rem;
+        color: var(--gray-text);
+    }
+    // #logo{
+    //     display: none;
+    // }
+
+    .nav-links{
+        // display: none;
+        background: var(--background-color);
+        
+    }
+}
+
+
+// About section
+
+.about{
+//    min-height: 100vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// .about-image,
+// .about-text{
+//     width: 50%;
+// }
+
+.about-image{
+    width: 50%;
+flex: 1 1 40rem;
+}
+
+.about-text{
+    width: 50%;
+    flex: 1 1 40rem;
+}
+
+.about-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
