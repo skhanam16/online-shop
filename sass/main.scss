@@ -1,9 +1,7 @@
-//Sass variables
-
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
-$color-light: #ccc;
+@import "./_partials/mixins";
+@import "./_partials/variables";
+@import "./_partials/conditional-directives.scss";
+@import "./_partials/loops";
 
 
 *,
@@ -29,7 +27,7 @@ $color-light: #ccc;
 }
 html {
     font-size: 62.5%;
-    // font-size: calc(112.5% + 0.25vw);
+    font-size: calc(112.5% + 0.25vw);
     --header1: calc(3rem + 1vw);
     --header2: calc(3rem + 1vw);
     --header2: calc(2.4rem + 1vw);
@@ -38,20 +36,28 @@ html {
     --big: calc(2.4rem + 1vw);
     --special-color: #906272;
     --gray-text: #525252;
-    --background-color: #414141;
+    
+    
    
 }
 
-body{
-    font-family: 'Ruh1', sans-serif;
+// display: grid will create a grid container with rows by default. This automatically create rows
+//this will show full width container edge to edge container
+
+.grid{
+    display: grid;
+    grid-template: repeat(4, 1fr);
 }
 
 #logo{
     font-family: 'vibes', sans-serif;
     font-size: var(--header1);
+   
 }
 h1{
-    font-size: var(--header1);
+
+    @include large-text;
+    // font-size: var(--header1);
 }
 
 h2 {
@@ -73,6 +79,7 @@ input,
 a,
 p {
     font-size: var(--text);
+   
     // it will stop shrinking at 50% vw
 }
 
@@ -88,7 +95,9 @@ ul {
 }
 
 a {
-    color: black;
+    @include blue-beans{
+        color: $special-color;
+    }
     text-decoration: none;
 }
 
@@ -228,3 +237,45 @@ flex: 1 1 40rem;
     height: 100%;
     object-fit: cover;
 }
+.error{
+    color: red;
+}
+
+.critical-error{
+    @extend .error;   
+    border: 1px solid red;
+    font-weight: bold;
+}
+
+.warning-button{
+    @include warning;
+padding: 1rem 2rem;
+
+}
+.cta-button{
+    @extend .warning-button;
+    @include rounded;
+    font-weight: bold;
+
+}
+
+.banner-wrapper{
+    @include banner-wrapper;
+
+}
+
+.banner-text{
+    text-align: center;
+    font-size: $header4;
+}
+
+.footer{
+    width: $full-width;
+    height: 30vh;
+background: $color-light-gray;
+@include roger-rovers{
+    border-top: 5px solid darken($special-color, 25%);
+}
+
+}
+

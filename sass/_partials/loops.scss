@@ -1,0 +1,11 @@
+// Loops
+// usually use in custom functions
+// it is an important and interesting concept to know
+// this allows you to repeat a certain part of your cdde
+//spacify the range of i for iterate through
+
+@for $i from 1 through 6{
+    .col-#{$i}{
+        width: $i * 2rem;
+    }
+}
