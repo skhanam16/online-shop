@@ -1,38 +1,51 @@
-//Sass variables
-// THEME
-// allowed values Dark, Light, Default
-$theme: dark;
+// SASS VARIABLES
 
-// colors
+
+// == THEME ==
+// allowed values Dark, Light, Default
+$theme-color: rgb(12, 12, 87);
+
+// == COLORS ==
 $bg-blue: rgb(250, 253, 253);
 $color-light-gray: rgb(56, 51, 51);
 $color-primary: #55c57a;
+$color-secondary: #f27731;
+$color-ternary: #ccf962;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
+$color-dark-blue: #170a48;
 $color-light: #ccc;
 $warning: orange;
 $special-color: #eb0e5b;
-$gray-text-color: #525252;
 
-//Fonts
-$text-font: "Alegreys Sans", Arial, sans-serif;
 
-// typography
+// == FONTS ==
+$text-font: Verdana, Arial, sans-serif;
+$headline-font: sans-serif;
+
+// == TYPOGRAPHY ==
 $header1: calc(3rem + 1vw);
 $header2: calc(3rem + 1vw);
 $header3: calc(2.4rem + 1vw);
 $header4: calc(2rem + 1vw);
 $text-color: #222222;
+$gray-text-color: #525252;
+$white: white;
 $text: clamp(1.5rem, 2vw,  2rem);
 $big: calc(2.4rem + 1vw);
 
+// == LINKS ==
+$link-color: $color-secondary;
 
+
+// == DIMENSSIONS ==
+$content-width: 60%;
 $header-height: 10vh;
 $nav-width: 80%;
 $footer-height: 20vh;
 $full-width: 100%;
 
-// allowed values
-$brand: roger-rovers;
+// == MENU ITEMS ==
+$menu-items-color: white;
 
 

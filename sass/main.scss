@@ -1,6 +1,6 @@
 @import "./_partials/mixins";
 @import "./_partials/variables";
-@import "./_partials/conditional-directives.scss";
+@import "./_partials/conditional-directives";
 @import "./_partials/loops";
 
 
@@ -79,6 +79,7 @@ input,
 a,
 p {
     font-size: var(--text);
+    font-family: $text-font;
    
     // it will stop shrinking at 50% vw
 }
@@ -95,9 +96,7 @@ ul {
 }
 
 a {
-    @include blue-beans{
-        color: $special-color;
-    }
+
     text-decoration: none;
 }
 
@@ -114,8 +113,7 @@ a {
 nav{
     width: 90%;
     margin: auto;
-    min-height: 10vh;
-    // background: #a1dbc8;
+    min-height: $header-height;
     display: flex;
     align-items: center; 
     padding: 2rem 1rem;
@@ -237,20 +235,14 @@ flex: 1 1 40rem;
     height: 100%;
     object-fit: cover;
 }
-.error{
-    color: red;
-}
-
-.critical-error{
-    @extend .error;   
-    border: 1px solid red;
-    font-weight: bold;
-}
 
 .warning-button{
     @include warning;
-padding: 1rem 2rem;
-
+    border: none;
+    // border-radius: 1rem;
+    margin: 2rem 2rem;
+    padding: 1rem;
+   
 }
 .cta-button{
     @extend .warning-button;
@@ -272,10 +264,6 @@ padding: 1rem 2rem;
 .footer{
     width: $full-width;
     height: 30vh;
-background: $color-light-gray;
-@include roger-rovers{
-    border-top: 5px solid darken($special-color, 25%);
-}
-
+    background: $color-light-gray;
 }
 
