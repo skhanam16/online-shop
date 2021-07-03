@@ -4,10 +4,12 @@ body{
     font-family: 'Ruh1', sans-serif;
     @if $contrast == high{
         background: $bg-blue;
+        color: $text-color;
     }
 
     @else if $contrast == low{
         background: white;
+        color: $text-color;
     }
 
     @else{

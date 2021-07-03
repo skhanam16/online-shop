@@ -1,6 +1,7 @@
 body {
   font-family: 'Ruh1', sans-serif;
-  background: #fafdfd; }
+  background: #fafdfd;
+  color: #222222; }
 
 .col-1 {
   width: 2rem; }
@@ -60,10 +61,7 @@ html {
   font-size: var(--header1); }
 
 h1 {
-  color: red;
-  font-size: 5.5rem;
-  font-family: Arial;
-  font-weight: bold; }
+  color: #525252; }
 
 h2 {
   font-size: var(--header2); }
@@ -80,7 +78,8 @@ label,
 input,
 a,
 p {
-  font-size: var(--text); }
+  font-size: var(--text);
+  font-family: Verdana, Arial, sans-serif; }
 
 .flex {
   display: flex;
@@ -179,23 +178,15 @@ nav {
   height: 100%;
   object-fit: cover; }
 
-.error, .critical-error {
-  color: red; }
-
-.critical-error {
-  border: 1px solid red;
-  font-weight: bold; }
-
 .warning-button, .cta-button {
-  background: orangered;
+  background: #f27731;
   color: white;
-  padding: 1rem 2rem; }
+  border: none;
+  margin: 2rem 2rem;
+  padding: 1rem; }
 
 .cta-button {
-  color: red;
-  font-size: 5.5rem;
-  font-family: Arial;
-  font-weight: bold;
+  color: #525252;
   border-radius: 2rem;
   font-weight: bold; }
 
@@ -211,5 +202,4 @@ nav {
 .footer {
   width: 100%;
   height: 30vh;
-  background: #383333;
-  border-top: 5px solid #73072c; }
+  background: #383333; }

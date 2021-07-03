@@ -1,0 +1,30 @@
+//MIXIN
+
+@mixin warning {
+    background: $color-secondary;
+    color: $white;
+}
+
+
+
+@mixin large-text{
+    color: $gray-text-color;
+    
+}
+
+
+
+@mixin banner-wrapper{
+    min-width: 80vh;
+    width: $full-width;
+    background: $special-color;
+  
+
+    }
+
+    // == MIXINS WITH ARGUMENTS ==
+    @mixin rounded{
+        @include large-text;
+        border-radius: 2rem;
+        }
+
