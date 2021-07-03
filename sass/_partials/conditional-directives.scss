@@ -1,0 +1,17 @@
+$contrast: high;
+
+body{
+    font-family: 'Ruh1', sans-serif;
+    @if $contrast == high{
+        background: $bg-blue;
+    }
+
+    @else if $contrast == low{
+        background: white;
+    }
+
+    @else{
+        background: rgb(156, 37, 180);
+    }
+   
+}
