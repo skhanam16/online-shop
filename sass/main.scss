@@ -242,12 +242,15 @@ flex: 1 1 40rem;
     // border-radius: 1rem;
     margin: 2rem 2rem;
     padding: 1rem;
+    @include rounded(1rem, 5px);
+    @include box-shadow(5px 0px 4px #999);
    
 }
 .cta-button{
     @extend .warning-button;
-    @include rounded;
+    @include rounded(1rem, 5px);
     font-weight: bold;
+   
 
 }
 
