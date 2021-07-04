@@ -12,19 +12,28 @@
     
 }
 
-
-
 @mixin banner-wrapper{
     min-width: 80vh;
     width: $full-width;
     background: $special-color;
   
-
     }
 
     // == MIXINS WITH ARGUMENTS ==
-    @mixin rounded{
+    @mixin rounded($radius, $border){
         @include large-text;
-        border-radius: 2rem;
+        border-radius: $radius;
+        border: $border solid black;
         }
+
+    // ... vararg or variable arguments
+    @mixin box-shadow($shadows...){
+        box-shadow: $shadows;
+        -moz-box-shadow: $shadows;
+        -webkit-box-shadow: $shadows;
+    }
+
+  
+
+
 

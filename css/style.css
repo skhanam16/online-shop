@@ -183,11 +183,18 @@ nav {
   color: white;
   border: none;
   margin: 2rem 2rem;
-  padding: 1rem; }
+  padding: 1rem;
+  color: #525252;
+  border-radius: 1rem;
+  border: 5px solid black;
+  box-shadow: 5px 0px 4px #999;
+  -moz-box-shadow: 5px 0px 4px #999;
+  -webkit-box-shadow: 5px 0px 4px #999; }
 
 .cta-button {
   color: #525252;
-  border-radius: 2rem;
+  border-radius: 1rem;
+  border: 5px solid black;
   font-weight: bold; }
 
 .banner-wrapper {
